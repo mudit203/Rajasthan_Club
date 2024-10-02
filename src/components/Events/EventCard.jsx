@@ -14,7 +14,7 @@ const EventCard = ({ title, imgUrl, id }) => {
   const navigate = useNavigate()
 
   function togo(){
-    navigate('/events/diwali', {state:{title:title, id:id}})
+    navigate('/diwali', {state:{title:title, id:id}})
   }
 
   return (

@@ -12,6 +12,7 @@ import Merchandise from "./views/Merchandise";
 import Companion from "./views/Companion";
 import Ongoing from "./views/Ongoing";
 import Upcoming from "./views/Upcoming";
+import Diwali from "./components/Events/Diwali";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/companion" element={<Companion />} />
         <Route path="/companion/ongoing" element={<Ongoing />} />
         <Route path="/companion/upcoming" element={<Upcoming />} />
+        <Route path="/diwali" element={<Diwali/>} />
       </Routes>
       {isLoading === true ? <div></div> : <Footer path={path} />}
     </div>
